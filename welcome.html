@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd7nFClVQwrmZi-ri5AtcIuyhhzObF_7i0OQ&s" type="image/x-icon">
+</head>
+<body>
+    <h1 id="welcomeMessage">Welcome!</h1>
+    <script>
+        // Retrieve the user's name from localStorage
+        const userName = localStorage.getItem('userName');
+        
+        // If the user name exists, show a personalized welcome message
+        if (userName) {
+            document.getElementById('welcomeMessage').innerText = `Welcome, ${userName}!`;
+        } else {
+            document.getElementById('welcomeMessage').innerText = 'Welcome!';
+        }
+    </script>
+</body>
+</html>

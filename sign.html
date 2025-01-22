@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd7nFClVQwrmZi-ri5AtcIuyhhzObF_7i0OQ&s" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" id="signupForm">
+        <div class="header">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTd7nFClVQwrmZi-ri5AtcIuyhhzObF_7i0OQ&s" alt="Sign Up">
+            <h1>Sign Up</h1>
+        </div>
+        
+        <div class="parent">
+            <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+                <span class="error" id="nameError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+                <span class="error" id="emailError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+                <span class="error" id="passwordError"></span>
+            </div>
+            
+            <div class="form-group">
+                <label for="confirmPassword">Confirm Password</label>
+                <input type="password" id="confirmPassword" name="confirmPassword" required>
+                <span class="error" id="confirmPasswordError"></span>
+            </div>
+            
+            <div class="form-group">
+                <button type="submit">Sign Up</button>
+            </div>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>

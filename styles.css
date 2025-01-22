@@ -1,0 +1,242 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header Container */
+header {
+    display: flex;
+    justify-content: space-between; /* Space between left, center, and right sections */
+    align-items: center; /* Vertically center-align items */
+    padding: 10px 20px; /* Padding for spacing */
+    background-color: #fff; /* Optional: background color */
+}
+
+/* Left Section - Logo */
+.logo img {
+    height: 50px; /* Set the size of the logo */
+    width: auto;
+}
+
+/* Center Section - Navigation */
+.nav-container {
+    flex-grow: 1; /* Allow the center section to grow and take up remaining space */
+    display: flex;
+    justify-content: center; /* Center the nav items */
+}
+
+nav ul {
+    list-style: none;
+    display: flex; /* Display the list horizontally */
+}
+
+nav ul li {
+    margin: 0 15px; /* Space between each nav item */
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333; /* Text color */
+    font-size: 16px;
+    font-weight: 500;
+}
+
+nav ul li a:hover {
+    color: #007bff; /* Hover effect for links */
+}
+
+
+/* Right Section - Icons */
+.icons {
+    display: flex;
+    align-items: center; /* Center the icons vertically */
+}
+
+.icons img {
+    height: 30px; /* Set the size of the cart icon */
+    width: auto;
+    margin-left: 15px; /* Space between the icons */
+}
+
+.icons a img {
+    height: 30px; /* Set size for the second icon */
+    width: auto;
+}
+
+/* Section Styling */
+.curved-image-section {
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden; /* Hide any overflow if the image extends beyond the curved border */
+}
+
+/* Image Styling with Curved Design */
+.curved-image-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 30px; /* Adjust this value to make the curve more or less pronounced */
+}
+
+/* Basic reset for margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Section styling */
+.image-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Create 3 equal-width columns */
+    gap: 20px; /* Space between grid items */
+    padding: 20px;
+    text-align: center; /* Center the text */
+    position: relative;
+}
+
+/* Styling for the section title */
+.image-grid h2 {
+    grid-column: 1 / -1; /* Make the heading span across all columns */
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Image item styling */
+.image-item {
+    overflow: hidden; /* Hide overflowed parts of the image */
+    border-radius: 10px; /* Rounded corners for the image container */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Light shadow */
+}
+
+/* Image styling */
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    transition: transform 0.3s ease; /* Smooth scale transition */
+}
+
+/* Hover effect for the images */
+.image-item:hover img {
+    transform: scale(1.05); /* Slightly zoom the image on hover */
+}
+
+/* Styling for the large image in the center */
+.image-item.large {
+    grid-column: 1 / 3; /* Make the large image span across two columns */
+    grid-row: 1 / 2; /* Place the large image on the first row */
+}
+
+/* Make the grid responsive */
+@media (max-width: 768px) {
+    .image-grid {
+        grid-template-columns: repeat(2, 1fr); /* 2 columns for tablets */
+    }
+
+    .image-item.large {
+        grid-column: 1 / -1; /* Make the large image span the full width on tablets */
+        grid-row: 1 / 2; /* Keep the large image on the first row */
+    }
+}
+
+@media (max-width: 480px) {
+    .image-grid {
+        grid-template-columns: 1fr; /* Stack all images in one column for small screens */
+    }
+
+    .image-item.large {
+        grid-column: 1 / -1; /* Large image spans full width */
+        grid-row: 1 / 2; /* Keep the large image on top */
+    }
+}
+
+/* Basic reset for margin and padding */
+/* * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+/* Footer Styling */
+.footer {
+    background-color: #242933;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+
+/* Container to hold all footer content */
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+    margin-bottom: 20px;
+}
+
+/* Footer section styling */
+.footer-section h3 {
+    font-size: 1.4rem;
+    color: white;
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.footer-section ul {
+    list-style-type: none;
+}
+
+.footer-section li {
+    margin-bottom: 8px;
+}
+
+.footer-section a {
+    text-decoration: none;
+    color: #666;
+    transition: color 0.3s ease;
+}
+
+.footer-section a:hover {
+    color: #0073e6;
+}
+
+/* Footer bottom styling */
+.footer-bottom {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #999;
+}
+
+.footer-bottom p {
+    margin-bottom: 10px;
+}
+
+.footer-bottom a {
+    text-decoration: none;
+    color: #0073e6;
+}
+
+.footer-bottom a:hover {
+    text-decoration: underline;
+}
+
+/* Make the footer responsive */
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .footer-content {
+        grid-template-columns: 1fr;
+    }
+}
